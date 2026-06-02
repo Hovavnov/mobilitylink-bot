@@ -1,7 +1,7 @@
 const Anthropic = require('@anthropic-ai/sdk');
 const { sendText, notifyOwner } = require('./whatsapp');
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const client = new Anthropic({ apiKey: process.env.ANTHROhPIC_API_KEY });
 
 // שמירת היסטוריית שיחות בזיכרון (לפי מספר טלפון)
 const conversations = new Map();
@@ -77,7 +77,7 @@ async function handleIncoming(from, text) {
 
   try {
     const response = await client.messages.create({
-      model: 'claude-sonnet-4-20250514',
+      model: 'claude-sonnet-4-5',
       max_tokens: 1000,
       system: SYSTEM_PROMPT,
       messages: history
