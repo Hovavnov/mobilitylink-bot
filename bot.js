@@ -1,7 +1,7 @@
 const Anthropic = require('@anthropic-ai/sdk');
 const { sendText, notifyOwner } = require('./whatsapp');
 
-const client = new Anthropic({ apiKey: process.env.ANTHROhPIC_API_KEY });
+const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 // שמירת היסטוריית שיחות בזיכרון (לפי מספר טלפון)
 const conversations = new Map();
