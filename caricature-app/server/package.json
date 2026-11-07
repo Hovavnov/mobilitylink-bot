@@ -1,0 +1,16 @@
+{
+  "name": "eitan-caricature-server",
+  "version": "1.0.0",
+  "description": "Image generation backend for the 'Eitan Avraham' caricature app",
+  "main": "index.js",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js && node --check prompts.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  }
+}

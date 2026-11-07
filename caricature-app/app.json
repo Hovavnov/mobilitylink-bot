@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "איתן אברהם יצירות עושים בשירותים",
+    "slug": "eitan-avraham-creations",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2b1055"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eitanavraham.creations",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.eitanavraham.creations",
+      "adaptiveIcon": {
+        "backgroundColor": "#2b1055",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "האפליקציה צריכה גישה לתמונות כדי שתוכלו לבחור תמונה ליצירת קריקטורה.",
+          "cameraPermission": "האפליקציה צריכה גישה למצלמה כדי לצלם תמונה ליצירת קריקטורה."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "האפליקציה צריכה גישה לגלריה כדי לשמור את הקריקטורות שיצרתם.",
+          "savePhotosPermission": "האפליקציה צריכה הרשאה לשמור את הקריקטורות שיצרתם בגלריה."
+        }
+      ],
+      "expo-sharing"
+    ],
+    "extra": {
+      "apiUrl": "http://localhost:8787",
+      "appToken": ""
+    }
+  }
+}
